@@ -1,0 +1,54 @@
+ # # CSV Files:
+# # ===================
+# # operations
+# # # =----------
+# # write --------- (data)
+# # read file ----- (file)
+
+#  reader(...)
+#         csv_reader = reader(iterable [, dialect='excel']
+#                                 [optional keyword args])
+#             for row in csv_reader:
+#                 process(row)
+#  writer(...)
+#         csv_writer = csv.writer(fileobj [, dialect='excel']
+#                                     [optional keyword args])
+#             for row in sequence:
+#                 csv_writer.writerow(row)
+
+
+# import csv
+# def pen(fileobj,data):
+# 	rd = csv.writer(fileobj,delimiter = ',')
+# 	print(rd)
+# 	print(data)
+
+# 	for a in data:
+# 		rd.writerow(a)
+
+# def read(fileobj):
+# 	rd = csv.reader(fileobj,delimiter=',')
+# 	for a in rd:
+# 		print(a)
+
+# def read(fileobj):
+# 	rd = csv.DictReader(fileobj,delimiter=',')
+# 	for a in rd:
+# 		print(a)
+# if __name__ == '__main__':
+
+	# fileobj = open('sample.csv','w')
+	# data = ['fname,lame,age,address'.split(','),
+	# 		'Batman,avnger,40,usa'.split(','),
+	# 		'supermna,avnger,40,usa'.split(','),
+	# 		'ironman,avnger,40,usa'.split(','),
+	# 		'wornderwomen,avnger,40,usa'.split(','),
+	# 		'spiderman,avnger,40,usa'.split(','),
+	# 		'himan,avnger,40,usa'.split(',')]
+
+	# pen(fileobj,data)
+	# fileobj = open('sample.csv','r')
+	# read(fileobj)
+	# fileobj.close()
+
+ 
